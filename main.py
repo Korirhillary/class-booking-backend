@@ -14,7 +14,7 @@ def sunday():
 # create a lecturehall
 @app.post('/lecturehalls')
 def create(lecturehall:LecturehallSchema):
-    return{"Message":"Happy New year 2024"}
+    return{"Message":"Lecture hall added succesfully"}
 
 # update Lecturehall
 @app.patch('/lecturehalls/{lecturehall_id}')
