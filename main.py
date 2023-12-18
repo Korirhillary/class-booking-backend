@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from schemas import LecturehallSchema
 app = FastAPI()
 
 #define a route
@@ -13,7 +13,7 @@ def sunday():
 
 # create a lecturehall
 @app.post('/lecturehalls')
-def create():
+def create(lecturehall:LecturehallSchema):
     return{"Message":"Happy New year 2024"}
 
 # update Lecturehall
