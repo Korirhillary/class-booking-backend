@@ -47,7 +47,7 @@ def book_lecturehall(book_lecturehall: UserSchema, db: Session = Depends(get_db)
     db.refresh(user_instance)
     return {"message": "Lecturehall booked successfully"}
 
-@app.get('/book-lecturehall')
+@app.get('/booklecturehall')
 def get_users(db: Session = Depends(get_db)):
     users = db.query(User).all()
     return users
