@@ -7,13 +7,13 @@ class LecturehallSchema(BaseModel):
     price:str
     
 
-class BooklecturehallSchema(BaseModel):
+class UserSchema(BaseModel):
     first_name:str
     last_name:str
     phone_number:str
     date:str
 
-class UserSchema(BaseModel):
+class BooklecturehallSchema(BaseModel):
 
     lecturehall_id:int
     user_id:int

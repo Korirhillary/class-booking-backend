@@ -14,7 +14,7 @@ class Lecturehall(Base):
     description = Column(Text(), nullable=False)
     Price = Column(Text(), nullable=False)
     
-    user = relationship ("Booking", backref = "lecturehall")
+    user = relationship ("Booklecturehall", backref = "lecturehall")
 
 class User(Base):
         __tablename__ = "users"
